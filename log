@@ -71,3 +71,20 @@ treemap.c:179:12: error: return from incompatible pointer type [-Werror=incompat
             ^~~~~~~~~~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 a00b041
+sá.,  3 de may. de 2025  1:43:38: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+treemap.c: In function 'firstTreeMap':
+treemap.c:179:20: error: passing argument 1 of 'minimum' from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return minimum(tree->root->pair);
+                    ^~~~
+treemap.c:77:12: note: expected 'TreeNode * {aka struct TreeNode *}' but argument is of type 'Pair * {aka struct Pair *}'
+ TreeNode * minimum(TreeNode * x){
+            ^~~~~~~
+treemap.c:179:12: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return minimum(tree->root->pair);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+af7b5ec
