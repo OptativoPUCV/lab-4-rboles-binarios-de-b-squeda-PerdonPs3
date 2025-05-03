@@ -162,11 +162,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode* successor = NULL;
 
     while (node != NULL) {
-        if (tree->lower_than(key, node->pair->key)) {
-            node = node->right;  
-        } else {
+        if (!tree->lower_than(key, node->pair->key)) {
             successor = node;
             node = node->left;  
+        } else {
+            node = node->right;
         }
     }
 
