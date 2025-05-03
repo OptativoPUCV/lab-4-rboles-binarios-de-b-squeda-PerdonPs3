@@ -88,3 +88,9 @@ treemap.c:179:12: error: return from incompatible pointer type [-Werror=incompat
             ^~~~~~~~~~~~~~~~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 af7b5ec
+sá.,  3 de may. de 2025  1:46:00: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  25|1
+total_score: 60/70
+499831f
